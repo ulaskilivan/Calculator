@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Calculator,Simple Calculator,Mathematics">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" media="(max-width:768px)" href="tablet.css">
-    <link rel="stylesheet" media="(max-width:500px)" href="phone.css">
+    <link rel="stylesheet" href="calculator_main.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="calculator_tablet.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="calculator_phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="calculator-solid.svg">
@@ -17,14 +17,14 @@
 </head>
 <body>
     <div id="container">
-        <div id="screen"></div>
+        <div id="screen">checkcheckcheckcheck</div>
         <div id="button-panel">
             <button onclick="clearScreen()" class="clear button">Clear</button>
             <button onclick="operandToScreen('/')" class="operand button">÷</button>
             <button onclick="numberToScreen(7)" class="button">7</button>
             <button onclick="numberToScreen(8)" class="button">8</button>
             <button onclick="numberToScreen(9)" class="button">9</button>
-            <button onclick="operandToScreen('x')" class="operand button">x</button>
+            <button onclick="operandToScreen('*')" class="operand button">X</button>
             <button onclick="numberToScreen(4)" class="button">4</button>
             <button onclick="numberToScreen(5)" class="button">5</button>
             <button onclick="numberToScreen(6)" class="button">6</button>
@@ -35,7 +35,7 @@
             <button onclick="operandToScreen('+')" class="operand button">+</button>
             <button onclick="numberToScreen(0)" class="zero button">0</button>
             <button onclick="operandToScreen('.')" class="button">,</button>
-            <button onclick="operandToScreen('=')" class="operand equal button">=</button>
+            <button onclick="calculatorBack()" class="operand equal button">=</button>
         </div>
     </div>
     <script src="app.js"></script>
